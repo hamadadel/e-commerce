@@ -6,6 +6,8 @@
 /storage/*.key
 /vendor
 /AdminLTE-3.2.0
+/public/dist
+/public/plugins
 .env
 .env.backup
 .env.production
