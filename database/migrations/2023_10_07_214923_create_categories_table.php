@@ -12,10 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('categories', function (Blueprint $table) {
-            $table->id();
+            $table->id()->unsigned();
             $table->foreignId('parent_id')
                 ->constrained('categories', 'id')
-                ->nullOnDelete();
+                ->restrictOnDelete();
 
             $table->string('name');
             $table->string('slug')->unique();

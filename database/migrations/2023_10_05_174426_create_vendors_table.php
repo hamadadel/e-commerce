@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('logo')->nullable();
             $table->string('cover_img')->nullable();
             $table->enum('status', ['active', 'inactive'])->default('inactive');
-            $table->$table->timestamps();
+            $table->timestamps();
 
             /**
              * unique VS primary key
